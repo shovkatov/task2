@@ -1,28 +1,25 @@
 {
   "users": [
     {
-      "name": "Aziz",
-      "phone": "123456",
-      "email": "az@m.com",
-      "id": "JCvrbAS"
+      "name": "Aziz ",
+      "phone": "12345",
+      "email": "a@mj.mo",
+      "id": "ccHNJez"
     },
     {
-      "name": "Sabina",
-      "phone": "10000000",
-      "email": "sabi@m.ru",
-      "id": "JA2Imz0"
+      "name": "admin",
+      "phone": "00001",
+      "email": "ad@m.m",
+      "id": "ArNY2Lb"
     },
     {
-      "name": "Laylo",
-      "phone": "999999",
-      "email": "l@m.ru",
-      "id": "gGyWOqO"
-    },
-    {
-      "name": "Elyor",
-      "phone": "9944455588",
-      "email": "el@m.com",
-      "id": "Wv01m7g"
+      "name": "Alex",
+      "phone": "199777",
+      "email": "a@m.c",
+      "id": "uuI6aUe"
     }
+  ],
+  "auth": [
+    
   ]
 }

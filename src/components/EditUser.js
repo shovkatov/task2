@@ -47,7 +47,7 @@ const EditUser = () => {
          resetForm();
          openNotification('success');
          setTimeout(() => {
-            navigateTo('/');
+            navigateTo('/home');
          }, 500);
       }
    };

@@ -12,7 +12,7 @@ function SelectedUser() {
       <div>
          <Button
             onClick={() => {
-               navigateTo('/');
+               navigateTo('/home');
             }}
             type="primary"
             size='large'

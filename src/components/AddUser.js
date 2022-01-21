@@ -35,7 +35,7 @@ const AddUser = () => {
          resetForm();
          openNotification('success');
          setTimeout(() => {
-            navigateTo('/');
+            navigateTo('/home');
          }, 500);
       }
    };
@@ -55,7 +55,7 @@ const AddUser = () => {
       <div className="addUser">
          <Button
             onClick={() => {
-               navigateTo('/');
+               navigateTo('/home');
             }}
             type="primary"
             size="large"
