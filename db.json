@@ -1,22 +1,22 @@
 {
   "users": [
     {
-      "name": "Aziz ",
-      "phone": "12345",
-      "email": "a@mj.mo",
-      "id": "ccHNJez"
-    },
-    {
-      "name": "admin",
-      "phone": "00001",
-      "email": "ad@m.m",
-      "id": "ArNY2Lb"
-    },
-    {
       "name": "Alex",
       "phone": "199777",
       "email": "a@m.c",
       "id": "uuI6aUe"
+    },
+    {
+      "name": "Sardor",
+      "phone": "89784562",
+      "email": "s@m.m",
+      "id": "ko-6Jrf"
+    },
+    {
+      "name": "Luke",
+      "phone": "01010",
+      "email": "l@m.m",
+      "id": "U-jlKpm"
     }
   ],
   "auth": [

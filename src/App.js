@@ -9,6 +9,7 @@ import SelectedUser from './components/SelectedUser';
 import SignUp from './components/SignUp';
 import UsersHook from './components/UsersHook';
 import store from './redux/store';
+import ProtectRoutes from './components/PtotectRoutes'
 
 function App() {
    return (
@@ -16,11 +17,13 @@ function App() {
          <div className="App">
             <Header />
             <Routes>
-               <Route path="/home" element={<UsersHook />} />
-               <Route path="/user/:id" element={<SelectedUser />} />
-               <Route path="/add_user" element={<AddUser />} />
-               <Route path="/edit_user/:id" element={<EditUser />} />
                <Route path="/" element={<LogIn />} />
+               <Route element={<ProtectRoutes/>}>
+                  <Route path="/home" element={<UsersHook />} />
+                  <Route path="/user/:id" element={<SelectedUser />} />
+                  <Route path="/add_user" element={<AddUser />} />
+                  <Route path="/edit_user/:id" element={<EditUser />} />
+               </Route>
                <Route path="/sign-up" element={<SignUp />} />
             </Routes>
          </div>

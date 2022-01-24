@@ -2,7 +2,8 @@
 const initState = {
    users: [],
    userEdit: {},
-   auths: []
+   auths: [],
+   isAuth:false
 };
 
 const reducerUser = (state = initState, action) => {
@@ -31,6 +32,11 @@ const reducerUser = (state = initState, action) => {
          return {
             ...state,
             userEdit: action.payload,
+         };
+      case 'isAuth':
+         return {
+            ...state,
+            isAuth: action.payload,
          };
       default:
          return state;

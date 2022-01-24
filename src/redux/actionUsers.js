@@ -106,3 +106,12 @@ export const getAuth = () => {
       });
    };
 };
+
+export const isAuthLogin = (bool) =>{
+   return (dispatch) => {
+      dispatch({
+         type:'isAuth',
+         payload:bool
+      })
+   }
+}

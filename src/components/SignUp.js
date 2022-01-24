@@ -2,7 +2,7 @@ import { Button, Checkbox, Form, Input, notification } from 'antd';
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { signUp } from '../redux/actionUsers';
+import { getAuth, isAuthLogin, signUp } from '../redux/actionUsers';
 
 const SignUp = () => {
    const dispatch = useDispatch();
@@ -51,8 +51,9 @@ const SignUp = () => {
       } else {
          dispatch(signUp(user));
          openNotification('success');
+         dispatch(isAuthLogin(false))
          setTimeout(() => {
-            navigateTo('/home');
+            navigateTo('/');
          }, 500);
          setUser({});
       }

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { getAuth, signUp } from '../redux/actionUsers';
+import { getAuth, isAuthLogin, signUp } from '../redux/actionUsers';
 
 const LogIn = () => {
    const dispatch = useDispatch();
@@ -30,14 +30,17 @@ const LogIn = () => {
    };
 
    function existAuth() {
+      let y = [];
       const x = auths.map((i) => {
          if (i.login == user.login && i.password == user.password) {
+            dispatch(isAuthLogin(true));
             return true;
          } else {
             return false;
          }
       });
-      return x[0];
+      y[0] = [...x.filter((i) => i === true)];
+      return y[0].length === 1;
    }
 
    const onFinish = () => {

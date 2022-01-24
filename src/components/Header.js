@@ -1,9 +1,12 @@
 import { Button } from 'antd';
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
+import { isAuthLogin } from '../redux/actionUsers';
 
 const Header = () => {
-   const navigate = useNavigate();
+   const dispatch = useDispatch();
+   const navigate = useNavigate()
    return (
       <div className="header">
          <h2>Test</h2>
@@ -14,7 +17,7 @@ const Header = () => {
             <Link to={'/sign-up'}>
                <Button type="primary">Sign Up</Button>
             </Link>
-            <Button type="primary" onClick={() => navigate('/')}>
+            <Button type="primary" onClick={() => ( dispatch(isAuthLogin(false))||(navigate('/')))}>
                Log Out
             </Button>
          </div>
